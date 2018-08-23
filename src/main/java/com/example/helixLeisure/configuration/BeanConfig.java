@@ -34,9 +34,9 @@ public class BeanConfig {
 		HikariDataSource ds = new HikariDataSource();
         ds.setMaximumPoolSize(100);
         ds.setDataSourceClassName("com.mysql.jdbc.jdbc2.optional.MysqlDataSource");
-        ds.addDataSourceProperty("url", "jdbc:mysql://localhost:3306/helix_db");
-        ds.addDataSourceProperty("user", "helix_db");
-        ds.addDataSourceProperty("password", "5PWSJqdjHTMtsMMf");
+        ds.addDataSourceProperty("url", "jdbc:mysql://localhost:3306/database");
+        ds.addDataSourceProperty("user", "user");
+        ds.addDataSourceProperty("password", "password");
         ds.addDataSourceProperty("cachePrepStmts", true);
         ds.addDataSourceProperty("prepStmtCacheSize", 250);
         ds.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);
